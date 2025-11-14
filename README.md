@@ -4,6 +4,7 @@
   <h1>Instella✨: Fully Open Language Models with Stellar Performance</h1>
 <a href='https://huggingface.co/collections/amd/instella-67c8a2c56e9198c85a97dd08'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
 <a href='https://rocm.blogs.amd.com/artificial-intelligence/introducing-instella-3B/README.html'><img src='https://img.shields.io/badge/Technical-Blog-red'></a> 
+<a href="https://arxiv.org/pdf/2511.10628.pdf"><img alt="Paper URL" src="https://img.shields.io/badge/arxiv-2511.10628-blue"></a>
 </div>
 
 Instella is a family of state-of-the-art open language models trained on AMD Instinct™ MI300X GPUs by the AMD GenAI team. Instella models significantly outperform existing fully open language models of similar size, as well as bridges the gap between fully open and open weight models by achieving competitive performance compared to Llama-3.2-3B and Qwen2.5-3B models. We provide the model weights, training code, and training data to accelerate the development of open-source language models. For our vision-language models, please check out [Instella-VL](https://github.com/AMD-AIG-AIMA/InstellaVL). For our long-context model, please go to [Instella-Long](https://github.com/AMD-AIG-AIMA/Instella/tree/instella-long).
@@ -197,14 +198,13 @@ This codebase is built from [OLMo](https://github.com/allenai/OLMo/tree/main).
 - Refer to the [LICENSE](./LICENSE) and [NOTICES](./NOTICES) files for more information.
 
 ## Citations
-Feel free to cite our Instella-3B models and give us a star⭐ if you find our work helpful :)
+Feel free to cite our Instella paper and give us a star⭐ if you find our work helpful :)
 
 ```text
-@misc{Instella,
-    title = {Instella: Fully Open Language Models with Stellar Performance},
-    url = {https://huggingface.co/amd/Instella-3B},
-    author = {Jiang Liu and Jialian Wu and Xiaodong Yu and Prakamya Mishra and Sudhanshu Ranjan and Zicheng Liu and Chaitanya Manem and Yusheng Su and Pratik Prabhanjan Brahma and Gowtham Ramesh and Ximeng Sun and Ze Wang and Emad Barsoum},
-    month = {March},
-    year = {2025}
+@article{liu2025instella,
+  title={Instella: Fully Open Language Models with Stellar Performance},
+  author={Liu, Jiang and Wu, Jialian and Yu, Xiaodong and Su, Yusheng and Mishra, Prakamya and Ramesh, Gowtham and Ranjan, Sudhanshu and Manem, Chaitanya and Sun, Ximeng and Wang, Ze and Brahma, Pratik Prabhanjan and Liu, Zicheng and Barsoum, Emad},
+  journal={arXiv preprint arXiv:2511.10628},
+  year={2025}
 }
 ```

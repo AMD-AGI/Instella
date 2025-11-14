@@ -5,6 +5,7 @@
 <a href='https://huggingface.co/amd/Instella-3B-Long-Instruct'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Model-blue'></a>
 <a href='https://huggingface.co/datasets/amd/Instella-Long'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Dataset-blue'></a>
 <a href='https://rocm.blogs.amd.com/artificial-intelligence/instella-long-context/README.html'><img src='https://img.shields.io/badge/Technical-Blog-red'></a>
+<a href="https://arxiv.org/pdf/2511.10628.pdf"><img alt="Paper URL" src="https://img.shields.io/badge/arxiv-2511.10628-blue"></a>
 </div>
 
 Instella-Long is a long-context language model continually trained from [Instella-3B-Instruct](https://huggingface.co/amd/Instella-3B-instruct) on AMD Instinct&trade; MI300X GPUs. Instella-Long can support 128K context length and achieve competitive performance outperforming open-weights models such as Phi-3.5-mini, Gemma-3-4B, and Qwen2.5-3B on the long-context benchmark. We provide the model weights, training code, and training data to accelerate the development of open-source language models.
@@ -133,14 +134,13 @@ This codebase is built from [OLMo](https://github.com/allenai/OLMo/tree/main).
 - The [amd/Instella-Long](https://huggingface.co/datasets/amd/Instella-Long) is a collection of pre-training and instruction following data that is used to train [Instella-3B-Long-Instruct](https://huggingface.co/amd/Instella-3B-Long-Instruct), and is licensed for academic and research purposes under a ResearchRAIL license. Refer to the [LICENSE](https://huggingface.co/datasets/amd/Instella-Long/blob/main/LICENSE) in the [amd/Instella-Long](https://huggingface.co/datasets/amd/Instella-Long) dataset card for more information.
 
 ## Citations
-Feel free to cite our Instella-3B models and give us a star⭐ if you find our work helpful :)
+Feel free to cite our Instella paper and give us a star⭐ if you find our work helpful :)
 
 ```text
-@misc{Instella,
-    title = {Instella: Fully Open Language Models with Stellar Performance},
-    url = {https://huggingface.co/amd/Instella-3B},
-    author = {Jiang Liu and Jialian Wu and Xiaodong Yu and Prakamya Mishra and Sudhanshu Ranjan and Zicheng Liu and Chaitanya Manem and Yusheng Su and Pratik Prabhanjan Brahma and Gowtham Ramesh and Ximeng Sun and Ze Wang and Emad Barsoum},
-    month = {March},
-    year = {2025}
+@article{liu2025instella,
+  title={Instella: Fully Open Language Models with Stellar Performance},
+  author={Liu, Jiang and Wu, Jialian and Yu, Xiaodong and Su, Yusheng and Mishra, Prakamya and Ramesh, Gowtham and Ranjan, Sudhanshu and Manem, Chaitanya and Sun, Ximeng and Wang, Ze and Brahma, Pratik Prabhanjan and Liu, Zicheng and Barsoum, Emad},
+  journal={arXiv preprint arXiv:2511.10628},
+  year={2025}
 }
 ```

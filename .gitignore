@@ -65,3 +65,12 @@ logs/
 
 datasets
 output
+
+# Secrets / environment files (AMD-AGI Repository Standards §4)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
